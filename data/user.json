@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "name": "User egy",
+    "email": "egy@user.dev",
+    "seo": "egy-user-dev"
+  },
+  {
+    "id": "2",
+    "name": "User ketto",
+    "email": "ketto@user.dev",
+    "seo": "ketto-user-dev"
+  },
+  {
+    "id": "3",
+    "name": "User harom",
+    "email": "harom@user.dev",
+    "seo": "harom-user-dev"
+  }
+]
