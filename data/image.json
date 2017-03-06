@@ -1,41 +1,41 @@
 [
   {
-    "id": "1",
-    "title": "Image1",
-    "seo": "image1",
-    "content": "Image 1 leírás",
-    "image": "https://placeimg.com/700/400/animals",
-    "user": {
-      "id": "1",
-      "name": "User egy",
-      "email": "egy@user.dev",
-      "seo": "egy-user-dev"
-    }
+	"id": "1",
+	"title": "Image1",
+	"seo": "image1",
+	"content": "Image 1 leírás",
+	"image": "https://placeimg.com/700/400/animals",
+	"user": {
+	  "id": "1",
+	  "name": "User egy",
+	  "email": "egy@user.dev",
+	  "seo": "egy-user-dev"
+	}
   },
   {
-    "id": "2",
-    "title": "Image2",
-    "seo": "image2",
-    "content": "Image 2 leírás",
-    "image": "https://placeimg.com/700/400/animals",
-    "user": {
-      "id": "3",
-      "name": "User harom",
-      "email": "harom@user.dev",
-      "seo": "harom-user-dev"
-    }
+	"id": "2",
+	"title": "Image2",
+	"seo": "image2",
+	"content": "Image 2 leírás",
+	"image": "https://placeimg.com/700/400/animals",
+	"user": {
+	  "id": "3",
+	  "name": "User harom",
+	  "email": "harom@user.dev",
+	  "seo": "harom-user-dev"
+	}
   },
   {
-    "id": "3",
-    "title": "Image3",
-    "seo": "image3",
-    "content": "Image 3 leírás",
-    "image": "https://placeimg.com/700/400/animals",
-    "user": {
-      "id": "1",
-      "name": "User egy",
-      "email": "egy@user.dev",
-      "seo": "egy-user-dev"
-    }
+	"id": "3",
+	"title": "Image3",
+	"seo": "image3",
+	"content": "Image 3 leírás",
+	"image": "https://placeimg.com/700/400/animals",
+	"user": {
+	  "id": "1",
+	  "name": "User egy",
+	  "email": "egy@user.dev",
+	  "seo": "egy-user-dev"
+	}
   }
 ]

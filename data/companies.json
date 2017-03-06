@@ -1,112 +1,112 @@
 [
   {
-    "category": {
-      "title": "Category 1",
-      "link": "cat1"
-    },
-    "language": [
-      {
-        "hu": {
-          "key": "hu",
-          "title": "Company 1 - hu",
-          "content": "Lorem 1 - hu"
-        },
-        "en": {
-          "key": "en",
-          "title": "Company 1 - en",
-          "content": "Lorem 1 - en"
-        }
-      }
-    ],
-    "title": "Company 1 - hu",
-    "link": "company1"
+	"category": {
+	  "title": "Category 1",
+	  "link": "cat1"
+	},
+	"language": [
+	  {
+		"hu": {
+		  "key": "hu",
+		  "title": "Company 1 - hu",
+		  "content": "Lorem 1 - hu"
+		},
+		"en": {
+		  "key": "en",
+		  "title": "Company 1 - en",
+		  "content": "Lorem 1 - en"
+		}
+	  }
+	],
+	"title": "Company 1 - hu",
+	"link": "company1"
   },
   {
-    "category": {
-      "title": "Category 2",
-      "link": "cat2"
-    },
-    "language": [
-      {
-        "hu": {
-          "key": "hu",
-          "title": "Company 2 - hu",
-          "content": "Lorem 2 - hu"
-        },
-        "en": {
-          "key": "en",
-          "title": "Company 2 - en",
-          "content": "Lorem 2 - en"
-        }
-      }
-    ],
-    "title": "Company 2 - hu",
-    "link": "company2"
+	"category": {
+	  "title": "Category 2",
+	  "link": "cat2"
+	},
+	"language": [
+	  {
+		"hu": {
+		  "key": "hu",
+		  "title": "Company 2 - hu",
+		  "content": "Lorem 2 - hu"
+		},
+		"en": {
+		  "key": "en",
+		  "title": "Company 2 - en",
+		  "content": "Lorem 2 - en"
+		}
+	  }
+	],
+	"title": "Company 2 - hu",
+	"link": "company2"
   },
   {
-    "category": {
-      "title": "Category 2",
-      "link": "cat2"
-    },
-    "language": [
-      {
-        "hu": {
-          "key": "hu",
-          "title": "Company 3 - hu",
-          "content": "Lorem 3 - hu"
-        },
-        "en": {
-          "key": "en",
-          "title": "Company 3 - en",
-          "content": "Lorem 3 - en"
-        }
-      }
-    ],
-    "title": "Company 3 - hu",
-    "link": "company3"
+	"category": {
+	  "title": "Category 2",
+	  "link": "cat2"
+	},
+	"language": [
+	  {
+		"hu": {
+		  "key": "hu",
+		  "title": "Company 3 - hu",
+		  "content": "Lorem 3 - hu"
+		},
+		"en": {
+		  "key": "en",
+		  "title": "Company 3 - en",
+		  "content": "Lorem 3 - en"
+		}
+	  }
+	],
+	"title": "Company 3 - hu",
+	"link": "company3"
   },
   {
-    "category": {
-      "title": "Category 2",
-      "link": "cat2"
-    },
-    "language": [
-      {
-        "hu": {
-          "key": "hu",
-          "title": "Company 4 - hu",
-          "content": "Lorem 4 - hu"
-        },
-        "en": {
-          "key": "en",
-          "title": "Company 4 - en",
-          "content": "Lorem 4 - en"
-        }
-      }
-    ],
-    "title": "Company 4 - hu",
-    "link": "company4"
+	"category": {
+	  "title": "Category 2",
+	  "link": "cat2"
+	},
+	"language": [
+	  {
+		"hu": {
+		  "key": "hu",
+		  "title": "Company 4 - hu",
+		  "content": "Lorem 4 - hu"
+		},
+		"en": {
+		  "key": "en",
+		  "title": "Company 4 - en",
+		  "content": "Lorem 4 - en"
+		}
+	  }
+	],
+	"title": "Company 4 - hu",
+	"link": "company4"
   },
   {
-    "category": {
-      "title": "Category 1",
-      "link": "cat1"
-    },
-    "language": [
-      {
-        "hu": {
-          "key": "hu",
-          "title": "Company 5 - hu",
-          "content": "Lorem 5 - hu"
-        },
-        "en": {
-          "key": "en",
-          "title": "Company 5 - en",
-          "content": "Lorem 5 - en"
-        }
-      }
-    ],
-    "title": "Company 5 - hu",
-    "link": "company5"
+	"category": {
+	  "title": "Category 1",
+	  "link": "cat1"
+	},
+	"language": [
+	  {
+		"hu": {
+		  "key": "hu",
+		  "title": "Company 5 - hu",
+		  "content": "Lorem 5 - hu"
+		},
+		"en": {
+		  "key": "en",
+		  "title": "Company 5 - en",
+		  "content": "Lorem 5 - en"
+		}
+	  }
+	],
+	"title": "Company 5 - hu",
+	"link": "company5"
   }
 ]

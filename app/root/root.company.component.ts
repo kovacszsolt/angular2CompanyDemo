@@ -7,8 +7,8 @@ import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 
 @Component({
-    selector: 'container-app',
-    template: `
+	selector: 'container-app',
+	template: `
 <div class="container">
 <menu-app></menu-app>
 <company-app></company-app>

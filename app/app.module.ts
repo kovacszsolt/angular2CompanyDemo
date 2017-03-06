@@ -19,32 +19,32 @@ import {CompanyComponent}  from './company/company.component';
 
 // Routings
 const routes = [
-    { //path: /
-        path: '',
-        name: 'Root',
-        component: RootComponent,
-    },
-    { //path: /hu/
-        path: ':language',
-        component: RootComponent,
-    },
-    { //path: /hu/cat1/
-        path: ':language/:category',
-        component: RootComponent,
-    },
-    { //path: /hu/cat1/company1/
-        path: ':language/:category/:company',
-        component:RootCompanyComponent,
-    }
+	{ //path: /
+		path: '',
+		name: 'Root',
+		component: RootComponent,
+	},
+	{ //path: /hu/
+		path: ':language',
+		component: RootComponent,
+	},
+	{ //path: /hu/cat1/
+		path: ':language/:category',
+		component: RootComponent,
+	},
+	{ //path: /hu/cat1/company1/
+		path: ':language/:category/:company',
+		component: RootCompanyComponent,
+	}
 ];
 
 /**
  * Load module
  */
 @NgModule({
-    imports: [BrowserModule, HttpModule, RouterModule.forRoot(routes)],
-    declarations: [AppComponent, RootComponent, MenuComponent, CategoryComponent, CompanyComponent,CompaniesComponent,RootCompanyComponent],
-    bootstrap: [AppComponent]
+	imports: [BrowserModule, HttpModule, RouterModule.forRoot(routes)],
+	declarations: [AppComponent, RootComponent, MenuComponent, CategoryComponent, CompanyComponent, CompaniesComponent, RootCompanyComponent],
+	bootstrap: [AppComponent]
 })
 export class AppModule {
 }

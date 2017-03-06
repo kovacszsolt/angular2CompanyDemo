@@ -1,12 +1,12 @@
 [
   {
-    "id":"1",
-    "title": "Magyar",
-    "link": "hu"
+	"id": "1",
+	"title": "Magyar",
+	"link": "hu"
   },
   {
-    "id":"2",
-    "title": "Angol",
-    "link": "en"
+	"id": "2",
+	"title": "Angol",
+	"link": "en"
   }
 ]

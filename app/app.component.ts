@@ -11,18 +11,18 @@ import {CategoryService} from './category/category.service';
 import {CompanyService} from './company/company.service';
 
 @Component({
-    moduleId: module.id,
-    selector: 'my-app',
-    template: `
+	moduleId: module.id,
+	selector: 'my-app',
+	template: `
 <div class="container">
     <router-outlet></router-outlet>
 </div>
     `,
-    providers: [LanguageService, CategoryService, CompanyService]
+	providers: [LanguageService, CategoryService, CompanyService]
 })
 
 
 export class AppComponent {
-    public constructor() {
-    }
+	public constructor() {
+	}
 }

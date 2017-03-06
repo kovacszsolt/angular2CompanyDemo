@@ -15,48 +15,48 @@ import {GlobalService} from "../_global/service";
 
 export class LanguageService extends GlobalService {
 
-    // source
-    private url: string = '/data/languages.json';
+	// source
+	private url: string = '/data/languages.json';
 
-    // langauges
-    private cache: LanguageStructure[] = [];
+	// langauges
+	private cache: LanguageStructure[] = [];
 
-    public constructor(private http: Http) {
-        super();
-    }
+	public constructor(private http: Http) {
+		super();
+	}
 
-    /**
-     * get All langauges
-     * @returns {any}
-     */
-    public getAll(): Promise<LanguageStructure[]> {
-        if (this.cache.length > 0) { //check cache
-            return new Promise((resolve, reject) => {
-                resolve(this.cache);
-            });
-        }
-        return this.http.get(this.url).toPromise().then((response) => {
-            this.cache = response.json() as LanguageStructure[];
-            return response.json() as LanguageStructure[];
-        })
-            .catch(this.onError);
-    }
+	/**
+	 * get All langauges
+	 * @returns {any}
+	 */
+	public getAll(): Promise<LanguageStructure[]> {
+		if (this.cache.length > 0) { //check cache
+			return new Promise((resolve, reject) => {
+				resolve(this.cache);
+			});
+		}
+		return this.http.get(this.url).toPromise().then((response) => {
+			this.cache = response.json() as LanguageStructure[];
+			return response.json() as LanguageStructure[];
+		})
+			.catch(this.onError);
+	}
 
-    /**
-     * get language from URL
-     * @param link
-     * @returns {Promise<T>}
-     */
-    public getLink(link: string): Promise<LanguageStructure[]> {
-        return new Promise((resolve, reject) => {
-                resolve(
-                    this.getAll().then((p) => {
-                            return p.filter((p => p.link == link));
-                        }
-                    )
-                )
-            }
-        )
-    }
+	/**
+	 * get language from URL
+	 * @param link
+	 * @returns {Promise<T>}
+	 */
+	public getLink(link: string): Promise<LanguageStructure[]> {
+		return new Promise((resolve, reject) => {
+				resolve(
+					this.getAll().then((p) => {
+							return p.filter((p => p.link == link));
+						}
+					)
+				)
+			}
+		)
+	}
 
 }

@@ -1,10 +1,10 @@
 [
   {
-    "title": "Category 1",
-    "link": "cat1"
+	"title": "Category 1",
+	"link": "cat1"
   },
   {
-    "title": "Category 2",
-    "link": "cat2"
+	"title": "Category 2",
+	"link": "cat2"
   }
 ]

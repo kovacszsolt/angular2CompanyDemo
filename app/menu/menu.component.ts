@@ -12,8 +12,8 @@ import {CategoryStructure} from "../category/category.structure";
 import {CategoryService} from "../category/category.service";
 
 @Component({
-    selector: 'menu-app',
-    template: `
+	selector: 'menu-app',
+	template: `
 <nav class="navbar navbar-default">
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
@@ -33,37 +33,37 @@ import {CategoryService} from "../category/category.service";
 
 export class MenuComponent {
 
-    // languages
-    public langaugeItems: LanguageStructure[] = [];
-    // categorys
-    public categoryItems: CategoryStructure[] = [];
+	// languages
+	public langaugeItems: LanguageStructure[] = [];
+	// categorys
+	public categoryItems: CategoryStructure[] = [];
 
-    // current language
-    private currentLang: string;
-    // current category
-    private currentCat: string;
+	// current language
+	private currentLang: string;
+	// current category
+	private currentCat: string;
 
-    /**
-     *
-     * @param serviceLanguage
-     * @param serviceCategory
-     * @param route
-     */
-    public constructor(private serviceLanguage: LanguageService, private serviceCategory: CategoryService, private route: ActivatedRoute) {
-        // processing routing
-        this.route.params.subscribe(params => {
-            // get language
-            this.currentLang = (params['language'] == undefined ? 'hu' : params['language'] );
-            // get category
-            this.currentCat = params['category'];
-        });
-        // read menu items from json
-        this.serviceLanguage.getAll().then((p) => {
-            this.langaugeItems = p;
-        });
-        // read category items from json
-        this.serviceCategory.getAll().then((p) => {
-            this.categoryItems = p;
-        });
-    }
+	/**
+	 *
+	 * @param serviceLanguage
+	 * @param serviceCategory
+	 * @param route
+	 */
+	public constructor(private serviceLanguage: LanguageService, private serviceCategory: CategoryService, private route: ActivatedRoute) {
+		// processing routing
+		this.route.params.subscribe(params => {
+			// get language
+			this.currentLang = (params['language'] == undefined ? 'hu' : params['language'] );
+			// get category
+			this.currentCat = params['category'];
+		});
+		// read menu items from json
+		this.serviceLanguage.getAll().then((p) => {
+			this.langaugeItems = p;
+		});
+		// read category items from json
+		this.serviceCategory.getAll().then((p) => {
+			this.categoryItems = p;
+		});
+	}
 }
