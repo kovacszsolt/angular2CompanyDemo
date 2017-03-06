@@ -17,8 +17,8 @@ import {isUndefined} from "util";
 	template: `
 <div *ngFor="let companyItem of companyItems">
 <p>Category: <a routerLink="/{{this.currentLanguage}}/{{this.currentCat}}/">{{companyItem.category.title}}</a><p>
-<p>Title: {{companyItem.language[0][currentLanguage].title}}<p>
-{{companyItem.language[0][currentLanguage].content}}
+<p>Title: {{companyItem.title}}<p>
+{{companyItem.content}}
 </p>
 </div>
 `
@@ -26,11 +26,20 @@ import {isUndefined} from "util";
 
 export class CompanyComponent {
 
-	// current language for template
+	/**
+	 * current language for template
+	 */
 	public currentLanguage: string;
 
-	// current category for template
+	/**
+	 * current category for template
+	 */
 	private currentCat: string;
+
+	/**
+	 * current company
+	 */
+	private currentCompany: string;
 
 	// company for template
 	public companyItems: CompanyStructure[] = [];
@@ -39,8 +48,9 @@ export class CompanyComponent {
 		this.route.params.subscribe(params => {
 			this.currentCat = params['category'];
 			this.currentLanguage = params['language'];
+			this.currentCompany = params['company'];
 			// get category from URL
-			this.CompanyService.getLink(params['company']).then((p) => {
+			this.CompanyService.getLink(this.currentLanguage, this.currentCompany).then((p) => {
 				this.companyItems = p;
 				console.log(p);
 			});

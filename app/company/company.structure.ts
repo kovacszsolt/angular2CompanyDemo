@@ -1,29 +1,20 @@
 import {CategoryStructure} from "../category/category.structure";
 /**
- * Menu structure
+ * Company structure
  */
 export class CompanyStructure {
 	/**
 	 * Constructor
-	 * @param id unique ID
-	 * @param title Title
-	 * @param url URL
+	 * @param CompanyStructure category
+	 * @param string title
+	 * @param string key
+	 * @param string content
+	 * @param string link
 	 */
 	constructor(public category: CategoryStructure,
-				public language: CompanyLanguageStructure[],
-				public link: string) {
-	}
-}
-
-export class CompanyLanguageStructure {
-	/**
-	 * Constructor
-	 * @param id unique ID
-	 * @param title Title
-	 * @param url URL
-	 */
-	constructor(public title: string,
+				public title: string,
 				public key: string,
-				public content: string) {
+				public content: string,
+				public link: string) {
 	}
 }
