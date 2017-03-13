@@ -25,6 +25,9 @@ import {CategoryService} from "../category/category.service";
         <li *ngFor="let categoryItem of categoryItems" [ngClass]="{active: currentCat==categoryItem.link}">
                 <a routerLink="/{{currentLang}}/{{categoryItem.link}}/">{{categoryItem.title}}..{{currentCat}}</a>
             </li>
+            <li>
+                <a href="https://github.com/kovacszsolt/angular2CompanyDemo">GITHUB Source</a>
+            </li>
         </ul>
     </div>
 </nav>
