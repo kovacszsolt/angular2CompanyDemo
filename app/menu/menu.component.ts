@@ -26,6 +26,9 @@ import {CategoryService} from "../category/category.service";
                 <a routerLink="/{{currentLang}}/{{categoryItem.link}}/">{{categoryItem.title}}..{{currentCat}}</a>
             </li>
             <li>
+            <a routerLink="/{{currentLang}}/search/">Search</a>
+            </li>
+            <li>
                 <a href="https://github.com/kovacszsolt/angular2CompanyDemo">GITHUB Source</a>
             </li>
         </ul>
