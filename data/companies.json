@@ -1,102 +1,102 @@
 [
   {
 	"category": {
-	  "title": "Category 1",
-	  "link": "cat1"
+	  "title": "Informatika",
+	  "link": "informatika"
 	},
 	"key": "hu",
-	"title": "Company 1 - hu",
-	"content": "Lorem 1 - hu",
-	"link": "company1"
+	"title": "Apple",
+	"content": "Az Apple Inc. (korábban Apple Computer, Inc.) főként hardvergyártással foglalkozó cég, ami saját szoftver platformot épít Mac OS X operációs rendszerére alapozva, mely a NeXTSTEP által fejlesztett operációs rendszer leszármazottjának tekinthető.",
+	"link": "apple"
   },
   {
 	"category": {
-	  "title": "Category 1",
-	  "link": "cat1"
+	  "title": "Informatika",
+	  "link": "informatika"
 	},
 	"key": "en",
-	"title": "Company 1 - en",
-	"content": "Lorem 1 - en",
-	"link": "company1"
+	"title": "Apple",
+	"content": "Apple is an American multinational technology company headquartered in Cupertino, California that designs, develops, and sells consumer electronics, computer software, and online services. The company's hardware products include the iPhone smartphone, the iPad tablet computer, the Mac personal computer, the iPod portable media player, the Apple smartwatch, and the Apple TV digital media player. Apple's consumer software includes the macOS and iOS operating systems, the iTunes media player, the Safari web browser, and the iLife and iWork creativity and productivity suites. Its online services include the iTunes Store, the iOS App Store and Mac App Store, Apple Music, and iCloud.",
+	"link": "apple"
   },
   {
 	"category": {
-	  "title": "Category 2",
-	  "link": "cat2"
+	  "title": "Gyógyászat",
+	  "link": "gyogyaszat"
 	},
 	"key": "hu",
-	"title": "Company 2 - hu",
-	"content": "Lorem 2 - hu",
-	"link": "company2"
+	"title": "Pfizer",
+	"content": "A Pfizer Inc. multinacionális gyógyszergyár, amelynek székhelye New Yorkban, az Amerikai Egyesült Államok területén található. A cég részvénye egyike annak a harminc részvényből álló kosárnak, amelyből a Dow Jones Ipari Átlagot számítják.",
+	"link": "pfizer"
   },
   {
 	"category": {
-	  "title": "Category 2",
-	  "link": "cat2"
+	  "title": "Gyógyászat",
+	  "link": "gyogyaszat"
 	},
 	"key": "en",
-	"title": "Company 2 - en",
-	"content": "Lorem 2 - en",
-	"link": "company2"
+	"title": "Pfizer",
+	"content": "Pfizer Inc. /ˈfaɪzər/ is an American global pharmaceutical corporation headquartered in New York City,[3] with its research headquarters in Groton, Connecticut. It is among the world's largest pharmaceutical companies.[4] It is listed on the New York Stock Exchange, and its shares have been a component of the Dow Jones Industrial Average since 2004.[5]",
+	"link": "pfizer"
   },
   {
 	"category": {
-	  "title": "Category 2",
-	  "link": "cat2"
+	  "title": "Gyógyászat",
+	  "link": "gyogyaszat"
 	},
 	"key": "hu",
-	"title": "Company 3 - hu",
-	"content": "Lorem 3 - hu",
-	"link": "company3"
+	"title": "Novartis",
+	"content": "A Novartis International AG egy multinacionális gyógyszeripari vállalat, amelynek központja Svájcban, Bázelben található. Leányvállalatai a Ciba Vision, a Sandoz, az Alcon, valamint a Chiron Corporation vállalatok.Bevétel szempontjából a legjövedelmezőbb gyógyszercég; 2008-ban 53 milliárd dollár nyereséget termelt.",
+	"link": "novartis"
   },
   {
 	"category": {
-	  "title": "Category 2",
-	  "link": "cat2"
+	  "title": "Gyógyászat",
+	  "link": "gyogyaszat"
 	},
 	"key": "en",
-	"title": "Company 3 - en",
-	"content": "Lorem 3 - en",
-	"link": "company3"
+	"title": "Novartis",
+	"content": "Novartis International AG is a Swiss multinational pharmaceutical company based in Basel, Switzerland. It is one of the largest pharmaceutical companies by both market cap and sales.",
+	"link": "novartis"
   },
   {
 	"category": {
-	  "title": "Category 2",
-	  "link": "cat2"
+	  "title": "Gyógyászat",
+	  "link": "gyogyaszat"
 	},
 	"key": "hu",
-	"title": "Company 4 - hu",
-	"content": "Lorem 4 - hu",
-	"link": "company4"
+	"title": "Bayer",
+	"content": "A Bayer AG egy német kutatás orientált gyógyszeripari és vegyipari vállalat. A központja Németországban, Leverkusenben található.A világ harmadik legnagyobb bevételű gyógyszergyára, 2008-ban 48 milliárd dollár bevételt ért el. A Bayer egy 150 éves múlttal rendelkező, a világ több mint 150 országában jelen lévő vegyipari konszern.",
+	"link": "bayer"
   },
   {
 	"category": {
-	  "title": "Category 2",
-	  "link": "cat2"
+	  "title": "Gyógyászat",
+	  "link": "gyogyaszat"
 	},
 	"key": "en",
-	"title": "Company 4 - en",
-	"content": "Lorem 4 - en",
-	"link": "company4"
+	"title": "Bayer",
+	"content":"Bayer AG (/ˈbeɪər/ or /ˈbaɪər/); German pronunciation: [ˈbaɪ̯ɐ]) is a German multinational chemical, pharmaceutical and life sciences company. It is headquartered in Leverkusen, where its illuminated sign is a landmark. Bayer's primary areas of business include human and veterinary pharmaceuticals; consumer healthcare products; agricultural chemicals and biotechnology products; and high value polymers. The company is a component of the Euro Stoxx 50 stock market index.[4] The company's motto is 'science for a better life.'",
+	"link": "bayer"
   },
   {
 	"category": {
-	  "title": "Category 1",
-	  "link": "cat1"
+	  "title": "Informatika",
+	  "link": "informatika"
 	},
 	"key": "en",
-	"title": "Company 5 - en",
-	"content": "Lorem 5 - en",
-	"link": "company5"
+	"title": "Google",
+	"content": "Google is an American multinational technology company specializing in Internet-related services and products. These include online advertising technologies, search, cloud computing, software, and hardware.",
+	"link": "google"
   },
   {
 	"category": {
-	  "title": "Category 1",
-	  "link": "cat1"
+	  "title": "Informatika",
+	  "link": "informatika"
 	},
 	"key": "hu",
-	"title": "Company 5 - hu",
-	"content": "Lorem 5 - hu",
-	"link": "company5"
+	"title": "Google",
+	"content": "A Google Inc. (NASDAQ: GOOG) amerikai, tőzsdén bejegyzett részvénytársaság, amit eredetileg zártkörűen működő társaságként alapítottak 1998-ban, és aminek a nevéhez fűződik a Google keresőmotor kifejlesztése és üzemeltetése. A Google központja a „Googleplexben” található, Kalifornia államban, Mountain View-ban. 2011. március 31-i adatok alapján 28 768 alkalmazottjuk van. Eric Schmidt, a Novell volt elnök-vezérigazgatója lett a cég második vezérigazgatója, miután az egyik alapító, Larry Page távozott a posztról. A cég weboldala szerint „a Google küldetése a világ összes információjának rendezése, univerzálisan elérhetővé és hasznosíthatóvá tétele”.",
+	"link": "google"
   }
 ]

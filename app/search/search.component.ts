@@ -20,7 +20,7 @@ import {isUndefined} from "util";
       <div>
       <ul>
             <li *ngFor="let searchItem of searchItems" >
-                <a routerLink="/{{searchItem.link}}/">{{searchItem.title}} - {{searchItem.category.title}}</a>
+                <a routerLink="/{{searchItem.key}}/{{searchItem.category.link}}/{{searchItem.link}}/">{{searchItem.title}} - {{searchItem.category.title}}</a>
                 <p>{{searchItem.content}}</p>
             </li>
         </ul>

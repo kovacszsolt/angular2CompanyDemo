@@ -1,10 +1,10 @@
 [
   {
-	"title": "Category 1",
-	"link": "cat1"
+	"title": "Informatika",
+	"link": "informatika"
   },
   {
-	"title": "Category 2",
-	"link": "cat2"
+	"title": "Gyógyászat",
+	"link": "gyogyaszat"
   }
 ]
