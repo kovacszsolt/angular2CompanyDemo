@@ -9,32 +9,43 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+/**
+ * Pipes for template
+ */
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
-var CapitalizePipe2 = (function () {
-    function CapitalizePipe2(_sanitizer) {
+/**
+ * Search Highlight
+ * with style turn off HTML safe
+ */
+var SearchHighlightStyle = (function () {
+    function SearchHighlightStyle(_sanitizer) {
         this._sanitizer = _sanitizer;
     }
-    CapitalizePipe2.prototype.transform = function (value, args) {
+    SearchHighlightStyle.prototype.transform = function (value, args) {
         return (this._sanitizer.bypassSecurityTrustHtml(value.replace(args, '<span style="background-color: red">' + args + '</span>')));
     };
-    return CapitalizePipe2;
+    return SearchHighlightStyle;
 }());
-CapitalizePipe2 = __decorate([
-    core_1.Pipe({ name: 'capitalize2' }),
+SearchHighlightStyle = __decorate([
+    core_1.Pipe({ name: 'searchhighlightstyle' }),
     __metadata("design:paramtypes", [platform_browser_1.DomSanitizer])
-], CapitalizePipe2);
-exports.CapitalizePipe2 = CapitalizePipe2;
-var CapitalizePipe = (function () {
-    function CapitalizePipe() {
+], SearchHighlightStyle);
+exports.SearchHighlightStyle = SearchHighlightStyle;
+/**
+ * Search Hightlight
+ * args: find string
+ */
+var SearchHighlight = (function () {
+    function SearchHighlight() {
     }
-    CapitalizePipe.prototype.transform = function (value, args) {
+    SearchHighlight.prototype.transform = function (value, args) {
         return value.replace(args, '<span class="bg-primary">' + args + '</span>');
     };
-    return CapitalizePipe;
+    return SearchHighlight;
 }());
-CapitalizePipe = __decorate([
-    core_1.Pipe({ name: 'capitalize' })
-], CapitalizePipe);
-exports.CapitalizePipe = CapitalizePipe;
+SearchHighlight = __decorate([
+    core_1.Pipe({ name: 'searchhighlight' })
+], SearchHighlight);
+exports.SearchHighlight = SearchHighlight;
 //# sourceMappingURL=pipe.js.map

@@ -1,7 +1,15 @@
+/**
+ * Pipes for template
+ */
 import {Pipe, PipeTransform} from '@angular/core';
 import {DomSanitizer, SafeHtml} from '@angular/platform-browser';
-@Pipe({name: 'capitalize2'})
-export class CapitalizePipe2 implements PipeTransform {
+
+/**
+ * Search Highlight
+ * with style turn off HTML safe
+ */
+@Pipe({name: 'searchhighlightstyle'})
+export class SearchHighlightStyle implements PipeTransform {
     constructor(private _sanitizer: DomSanitizer) {
     }
 
@@ -11,8 +19,12 @@ export class CapitalizePipe2 implements PipeTransform {
     }
 }
 
-@Pipe({name: 'capitalize'})
-export class CapitalizePipe implements PipeTransform {
+/**
+ * Search Hightlight
+ * args: find string
+ */
+@Pipe({name: 'searchhighlight'})
+export class SearchHighlight implements PipeTransform {
     transform(value: string, args: string): string {
         return value.replace(args, '<span class="bg-primary">' + args + '</span>');
 

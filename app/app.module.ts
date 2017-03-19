@@ -9,7 +9,8 @@ import {HttpModule}      from '@angular/http';
 import {RouterModule} from '@angular/router';
 import {FormsModule} from '@angular/forms'; // <--- JavaScript import from Angular
 
-import {CapitalizePipe} from "./_global/pipe";
+// Pipes import
+import {SearchHighlight} from "./_global/pipe";
 //Application imports
 import {AppComponent}  from './app.component';
 import {RootComponent}  from './root/root.component';
@@ -30,18 +31,22 @@ const routes = [
 	},
 	{ //path: /hu/search
 		path: ':language/search',
+		name: 'Search',
 		component: RootSearchComponent,
 	},
 	{ //path: /hu/
 		path: ':language',
+		name: 'Language',
 		component: RootComponent,
 	},
 	{ //path: /hu/cat1/
 		path: ':language/:category',
+		name: 'Category',
 		component: RootComponent,
 	},
 	{ //path: /hu/cat1/company1/
 		path: ':language/:category/:company',
+		name: 'Company',
 		component: RootCompanyComponent,
 	}
 
@@ -52,7 +57,7 @@ const routes = [
  */
 @NgModule({
 	imports: [BrowserModule, FormsModule, HttpModule, RouterModule.forRoot(routes)],
-	declarations: [AppComponent, RootComponent, MenuComponent, SearchComponent, CategoryComponent, CompanyComponent, CompaniesComponent, RootCompanyComponent, RootSearchComponent,CapitalizePipe],
+	declarations: [AppComponent, RootComponent, MenuComponent, SearchComponent, CategoryComponent, CompanyComponent, CompaniesComponent, RootCompanyComponent, RootSearchComponent,SearchHighlight],
 	bootstrap: [AppComponent]
 })
 export class AppModule {

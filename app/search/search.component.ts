@@ -20,8 +20,10 @@ import {isUndefined} from "util";
       <div>
       <ul>
             <li *ngFor="let searchItem of searchItems" >
-                <a routerLink="/{{searchItem.key}}/{{searchItem.category.link}}/{{searchItem.link}}/">{{searchItem.title}} - {{searchItem.category.title}}</a>
-                <p [innerHtml]="searchItem.content | capitalize: searchString" ></p>
+                <a routerLink="/{{searchItem.key}}/{{searchItem.category.link}}/{{searchItem.link}}/">
+                	<span [innerHtml]="searchItem.title | searchhighlight: searchString" ></span> - {{searchItem.category.title}}
+                </a>
+                <p [innerHtml]="searchItem.content | searchhighlight: searchString" ></p>
             </li>
         </ul>
         </div>

@@ -3,7 +3,7 @@
  */
 // import system
 import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 
 // import components
 import {LanguageStructure} from "../language/language.structure";
@@ -12,8 +12,8 @@ import {CategoryStructure} from "../category/category.structure";
 import {CategoryService} from "../category/category.service";
 
 @Component({
-	selector: 'menu-app',
-	template: `
+    selector: 'menu-app',
+    template: `
 <nav class="navbar navbar-default">
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
@@ -23,10 +23,10 @@ import {CategoryService} from "../category/category.service";
         </ul>
         <ul class="nav navbar-nav navbar-right">
         <li *ngFor="let categoryItem of categoryItems" [ngClass]="{active: currentCat==categoryItem.link}">
-                <a routerLink="/{{currentLang}}/{{categoryItem.link}}/">{{categoryItem.title}}..{{currentCat}}</a>
+                <a routerLink="/{{currentLang}}/{{categoryItem.link}}/">{{categoryItem.title}}</a>
             </li>
             <li>
-            <a  routerLink="/{{currentLang}}/search/">Search</a>
+            <a  routerLink="/{{currentLang}}/search/" >Search</a>
             </li>
             <li>
                 <a href="https://github.com/kovacszsolt/angular2CompanyDemo">GITHUB Source</a>
@@ -39,37 +39,36 @@ import {CategoryService} from "../category/category.service";
 
 export class MenuComponent {
 
-	// languages
-	public langaugeItems: LanguageStructure[] = [];
-	// categorys
-	public categoryItems: CategoryStructure[] = [];
+    // languages
+    public langaugeItems: LanguageStructure[] = [];
+    // categorys
+    public categoryItems: CategoryStructure[] = [];
+    // current language
+    private currentLang: string;
+    // current category
+    private currentCat: string;
 
-	// current language
-	private currentLang: string;
-	// current category
-	private currentCat: string;
-
-	/**
-	 *
-	 * @param serviceLanguage
-	 * @param serviceCategory
-	 * @param route
-	 */
-	public constructor(private serviceLanguage: LanguageService, private serviceCategory: CategoryService, private route: ActivatedRoute) {
-		// processing routing
-		this.route.params.subscribe(params => {
-			// get language
-			this.currentLang = (params['language'] == undefined ? 'hu' : params['language'] );
-			// get category
-			this.currentCat = params['category'];
-		});
-		// read menu items from json
-		this.serviceLanguage.getAll().then((p) => {
-			this.langaugeItems = p;
-		});
-		// read category items from json
-		this.serviceCategory.getAll().then((p) => {
-			this.categoryItems = p;
-		});
-	}
+    /**
+     *
+     * @param serviceLanguage
+     * @param serviceCategory
+     * @param route
+     */
+    public constructor(private serviceLanguage: LanguageService, private serviceCategory: CategoryService, private route: ActivatedRoute) {
+        // processing routing
+        this.route.params.subscribe(params => {
+            // get language
+            this.currentLang = (params['language'] == undefined ? 'hu' : params['language'] );
+            // get category
+            this.currentCat = params['category'];
+        });
+        // read menu items from json
+        this.serviceLanguage.getAll().then((p) => {
+            this.langaugeItems = p;
+        });
+        // read category items from json
+        this.serviceCategory.getAll().then((p) => {
+            this.categoryItems = p;
+        });
+    }
 }
