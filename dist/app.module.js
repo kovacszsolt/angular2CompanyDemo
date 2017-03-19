@@ -15,6 +15,7 @@ var platform_browser_1 = require("@angular/platform-browser");
 var http_1 = require("@angular/http");
 var router_1 = require("@angular/router");
 var forms_1 = require("@angular/forms"); // <--- JavaScript import from Angular
+var pipe_1 = require("./_global/pipe");
 //Application imports
 var app_component_1 = require("./app.component");
 var root_component_1 = require("./root/root.component");
@@ -60,7 +61,7 @@ var AppModule = (function () {
 AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, http_1.HttpModule, router_1.RouterModule.forRoot(routes)],
-        declarations: [app_component_1.AppComponent, root_component_1.RootComponent, menu_component_1.MenuComponent, search_component_1.SearchComponent, category_component_1.CategoryComponent, company_component_1.CompanyComponent, companies_component_1.CompaniesComponent, root_company_component_1.RootCompanyComponent, root_search_component_1.RootSearchComponent],
+        declarations: [app_component_1.AppComponent, root_component_1.RootComponent, menu_component_1.MenuComponent, search_component_1.SearchComponent, category_component_1.CategoryComponent, company_component_1.CompanyComponent, companies_component_1.CompaniesComponent, root_company_component_1.RootCompanyComponent, root_search_component_1.RootSearchComponent, pipe_1.CapitalizePipe],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);

@@ -35,6 +35,7 @@ var SearchComponent = (function () {
     Object.defineProperty(SearchComponent.prototype, "searchText", {
         set: function (text) {
             var _this = this;
+            this.searchString = text;
             this.SearchService.getSearch(this.currentLanguage, text).then(function (results) {
                 _this.searchItems = results;
             });
@@ -48,7 +49,7 @@ var SearchComponent = (function () {
 SearchComponent = __decorate([
     core_1.Component({
         selector: 'search-app',
-        template: "\n<div class=\"form-group\">\n        <label for=\"alterEgo\">Search</label>\n        <input class=\"form-control\" [(ngModel)]=\"searchText\" >\n      </div>\n      <div>\n      <ul>\n            <li *ngFor=\"let searchItem of searchItems\" >\n                <a routerLink=\"/{{searchItem.key}}/{{searchItem.category.link}}/{{searchItem.link}}/\">{{searchItem.title}} - {{searchItem.category.title}}</a>\n                <p>{{searchItem.content}}</p>\n            </li>\n        </ul>\n        </div>\n"
+        template: "\n<div class=\"form-group\">\n        <label for=\"alterEgo\">Search</label>\n        <input class=\"form-control\" [(ngModel)]=\"searchText\" >\n      </div>\n      <div>\n      <ul>\n            <li *ngFor=\"let searchItem of searchItems\" >\n                <a routerLink=\"/{{searchItem.key}}/{{searchItem.category.link}}/{{searchItem.link}}/\">{{searchItem.title}} - {{searchItem.category.title}}</a>\n                <p [innerHtml]=\"searchItem.content | capitalize: searchString\" ></p>\n            </li>\n        </ul>\n        </div>\n"
     }),
     __metadata("design:paramtypes", [company_service_1.CompanyService, router_1.ActivatedRoute])
 ], SearchComponent);

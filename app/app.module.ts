@@ -9,6 +9,7 @@ import {HttpModule}      from '@angular/http';
 import {RouterModule} from '@angular/router';
 import {FormsModule} from '@angular/forms'; // <--- JavaScript import from Angular
 
+import {CapitalizePipe} from "./_global/pipe";
 //Application imports
 import {AppComponent}  from './app.component';
 import {RootComponent}  from './root/root.component';
@@ -51,7 +52,7 @@ const routes = [
  */
 @NgModule({
 	imports: [BrowserModule, FormsModule, HttpModule, RouterModule.forRoot(routes)],
-	declarations: [AppComponent, RootComponent, MenuComponent, SearchComponent, CategoryComponent, CompanyComponent, CompaniesComponent, RootCompanyComponent, RootSearchComponent],
+	declarations: [AppComponent, RootComponent, MenuComponent, SearchComponent, CategoryComponent, CompanyComponent, CompaniesComponent, RootCompanyComponent, RootSearchComponent,CapitalizePipe],
 	bootstrap: [AppComponent]
 })
 export class AppModule {

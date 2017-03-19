@@ -21,7 +21,7 @@ import {isUndefined} from "util";
       <ul>
             <li *ngFor="let searchItem of searchItems" >
                 <a routerLink="/{{searchItem.key}}/{{searchItem.category.link}}/{{searchItem.link}}/">{{searchItem.title}} - {{searchItem.category.title}}</a>
-                <p>{{searchItem.content}}</p>
+                <p [innerHtml]="searchItem.content | capitalize: searchString" ></p>
             </li>
         </ul>
         </div>
@@ -32,9 +32,11 @@ export class SearchComponent {
 
 	// searchResult for templates
 	public searchItems: CompanyStructure[];
+	public searchString:string;
 	private currentLanguage: string;
 
 	set searchText(text: any) {
+		this.searchString=text;
 		this.SearchService.getSearch(this.currentLanguage,text).then((results) => {
 			this.searchItems = results;
 		});
